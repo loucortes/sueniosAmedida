@@ -1,0 +1,72 @@
+:root {
+    --colorPrincipal: #D5B99D;
+    --colorSecundario: #D9D9D9;
+    --colorTerciario: #CEA0A0;
+}
+
+@font-face {
+    font-family: "fuente-normal";
+    src: url(../assets/fuentes/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "fuente-semibold";
+    src: url(../assets/fuentes/Inter/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "fuente-bold";
+    src: url(../assets/fuentes/Inter/static/Inter-Bold.ttf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/******************************HEADER********************************/
+
+.menu {
+    background-color: pink;
+    height: 40px;
+}
+
+.logo {
+    background-color: yellow;
+}
+
+.boton {
+    background-color: red;
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+.link-cama {
+    display: block;
+    margin-left: 100px;
+
+}
+
+.cama {
+    font-size: 45px;
+    color: black;
+
+}
+
+.imagen-logo {
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******************************FIN HEADER********************************/
