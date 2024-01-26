@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #nav{
+          background-color: #EDE0D4;
+          z-index: 3;
+        }
+
+        .btn{
+          background-color: #CEA0A0;
+          border-color: #CEA0A0;
+        }
+
+        #container{
+          margin-top: 300px;
+        }
+
+
+    </style>
+    <script>
+      let selectedSize = 'M'; // Default selected size
+
+function updateSize(size) {
+    if (selectedSize === size) {
+        // If the clicked button is already selected, deselect it
+        selectedSize = '';
+    } else {
+        // Select the clicked button and deselect others
+        selectedSize = size;
+    }
+
+    // Update the button states
+    updateButtonStates();
+}
+
+function updateButtonStates() {
+    const buttons = document.querySelectorAll('.btn-group .btn');
+    buttons.forEach(button => {
+        const size = button.innerText;
+        if (size === selectedSize) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
+    </script>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar position-sticky mt-n5 " id="nav">
+    <div class="container" >
+      <a class="navbar-brand" href="#"><img src="images/logoSueños.png" alt="" width="100" height="100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <img src="images/Double Bed.png" alt="">
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Resumen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <label for="">1 Cabecero Urban $500</label>
+            </li>
+            <li class="nav-item">
+              <label for="">1 Cabecero Classic $600 </label>
+            </li>
+            <li class="nav-item dropdown">
+              <label for="">1 Cabecero Modern $700</label>
+            </li>
+            <li class="nav-item">
+              <label for="">Total: $1500</label>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Cards container -->
+  <main>
+    <div class="container my-5 border"  id="container">
+      <div class="row">
+        <div class="col my-5">
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/Logo Van Gogh.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Van Gogh</h5>
+                <div class="btn-group" role="group" aria-label="Size">
+                    <button type="button" class="btn btn-primary" value="S">S</button>
+                    <button type="button" class="btn btn-primary" value="M">M</button>
+                    <button type="button" class="btn btn-primary" value="L">L</button>
+                </div>
+                <div class="col my-2">
+                    <button class="btn">Custom</button><input type="text" placeholder="25X42">
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+        </div> 
+          </div> 
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cabeceroFamily.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Family</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" value="S">S</button>
+                      <button type="button" class="btn btn-primary" value="M">M</button>
+                      <button type="button" class="btn btn-primary" value="L">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/cabecerosGrafiti.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Urban</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/IMG-20240119-WA0030.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/IMG-20240119-WA0032.jpg" alt="Card image cap" height="215">
+              <div class="card-body">
+                  <h5 class="card-title">Green Garden</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/IMG-20240119-WA0033.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Spring Flower</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/IMG-20240119-WA0036.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+          <div class="col my-5">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/Logo Van Gogh.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <div class="btn-group" role="group" aria-label="Size">
+                      <button type="button" class="btn btn-primary" onclick="updateSize('S')">S</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('M')">M</button>
+                      <button type="button" class="btn btn-primary" onclick="updateSize('L')">L</button>
+                  </div>
+                  <div class="col my-2">
+                      <button class="btn">Custom</button><input type="text">
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+          </div> 
+          </div>
+
+        </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    document.querySelector(".row").addEventListener("click", (e)=>{
+      updateSize(e.target.value);
+})
+  </script>
+</body>
+</html>
