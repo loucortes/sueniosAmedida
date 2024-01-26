@@ -31,42 +31,19 @@ html {
 
 /******************************HEADER********************************/
 
-.menu {
-    background-color: pink;
-    height: 40px;
-}
-
-.logo {
-    background-color: yellow;
-}
-
-.boton {
+.container{
     background-color: red;
+    margin: 0px 50px;
 }
 
-.link {
-    text-decoration: none;
-
-}
-
-.link-cama {
-    display: block;
-    margin-left: 100px;
-
+.img-logo {
+    height: 90px;
+    width: 90px;
 }
 
 .cama {
-    font-size: 45px;
-    color: black;
-
+    color: white;
 }
 
-.imagen-logo {
-    height: 90px;
-    width: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /******************************FIN HEADER********************************/
