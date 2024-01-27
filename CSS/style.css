@@ -29,21 +29,83 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: "fuente-normal";
+}
+
 /******************************HEADER********************************/
 
-.container{
-    background-color: red;
-    margin: 0px 50px;
-}
+#nav{
+    background-color: #EDE0D4;
+    z-index: 3;
+  }
 
-.img-logo {
-    height: 90px;
-    width: 90px;
-}
-
-.cama {
-    color: white;
-}
+  .btn{
+    background-color: #CEA0A0;
+    border-color: #CEA0A0;
+  }
 
 
 /******************************FIN HEADER********************************/
+/****************************INICIO MAIN******************************/
+.titulo {
+
+    font-family: "fuente-bold";
+}
+
+.box-form {
+    font-family: "fuente-semibold";
+    background-color: var(--colorSecundario);
+}
+
+.linea{
+    background-color: var(--colorSecundario);
+    height: 7px;
+}
+
+.box-resumen {
+    background-color: var(--colorTerciario);
+    font-family: "fuente-semibold";
+}
+
+.pa-derecha{
+    text-align: right;
+}
+
+.borde-resumen{
+    width: 95%;
+}
+
+.total {
+    font-family: "fuente-bold";
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.form-check {
+    margin-left: 35px;
+}
+
+.texto-small{
+    font-size: 10px;
+    margin-left: 35px;
+
+}
+
+.form-check-inline {
+    font-size: 19px;
+    font-family: "fuente-semibold";
+}
+
+.btn {
+    background-color: var(--colorSecundario);
+    color: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 180px;
+}
+
+.btn:hover {
+    background-color: var(--colorSecundario);   
+}
+
+ 
