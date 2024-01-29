@@ -1,40 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Inicio | Sueños a medida</title>
     <link rel="icon" href="../assets/images/logoSueños2.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
+
 <body>
     <!--------------------------------------------HEADER------------------------------------------------->
     <header>
-            <nav class="navbar bg-dark navbar-expand-lg navMia">
-                <div class="container">
-                    <img class="img-logo" src="../assets/imagenes/logoSueños.png" alt="Logo sueños">
-                    <span class="material-symbols-outlined cama">
-                     king_bed
-                     </span>
+        <!------------------------------INICIO NAVBAR-------------------------------------------------->
+        <nav class="navbar position-sticky mt-n5 " id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="../html/home.html"><img src="../assets/images/logoSueños.png" alt=""
+                        width="120" height="90"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <img src="../assets/images/Double Bed.png" alt="">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Resumen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <label for="">1 Cabecero Urban $500</label>
+                            </li>
+                            <li class="nav-item">
+                                <label for="">1 Cabecero Classic $600 </label>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <label for="">1 Cabecero Modern $700</label>
+                            </li>
+                            <li class="nav-item">
+                                <label for="">Total: $1500</label>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <!--------------------------PREGUNTAR A ESTER PARA LAS IMAGENES Y EL BOTÓN || LA BARRA DE CATÁLOGO y nosotros y los circulos más cerca--------------------->
+        <!------------------------------FIN NAVBAR-------------------------------------------------->
+        <!------------------------------INICIO CARROUSEL HEADER------------------------------------->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="../assets/images/1.jpg" class="d-block w-100 img-fluid" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block mb-5">
+                        <button type="button" class="btn btn-personalizar">Sigue personalizando</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="../assets/images/IMG-20240119-WA0036.jpg" class="d-block w-100 img-fluid h-10"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block mb-5">
+                        <button type="button" class="btn btn-personalizar">Sigue personalizando</button>
+                    </div>
+                </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../assets/images/Logo Van Gogh.jpg" class="d-block w-100 img-fluid h-10"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block mb-5">
+                        <button type="button" class="btn btn-personalizar">Sigue personalizando</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!------------------------------FIN CARROUSEL HEADER------------------------------------->
     </header>
     <!--------------------------------------------FIN HEADER------------------------------------------------->
     <!--------------------------------------------MAIN------------------------------------------------->
     <main>
+        <!------------------TITULO CATÁLOGO----------------------------->
+        <div class="text-center mt-5 position-relative ">
+            <a href="./catalogue.html" class="pa-catalogo position-relative d-inline"> Catálogo</a>
+            <div class="linea-catalogo position-absolute top-50 start-50 translate-end-x "></div>
+        </div>
+        <!------------------FIN TITULO CATÁLOGO----------------------------->
+        <!------------------CIRCULOS----------------------------->
+        <div class="row mt-5 mx-auto text-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center p-3 p-md-4 p-lg-5">
+                <div class="rounded-circle p-4 circulo d-flex flex-column align-items-center justify-content-center">
+                    <h4>Paso 1</h4>
+                    <p>Elige la forma que desees tener tu cabecero: <strong>redondo o rectangular</strong></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center p-3 p-md-4 p-lg-5">
+                <div class="rounded-circle p-4 circulo d-flex flex-column align-items-center justify-content-center">
+                    <h4>Paso 2</h4>
+                    <p>Puedes elegir las medidas predefinidas estandars o poner las medidas que necesite tu cabecero</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center pb-4">
+                <div class="rounded-circle p-4 circulo d-flex flex-column align-items-center justify-content-center">
+                    <h4>Paso 3</h4>
+                    <p">Añade una foto, elige los diseños que tenemos o escribe el deseado, elementos que uqieras que
+                        aparezca, nuestro equipo de diseño podrá diseñarlo</p>
+                </div>
+            </div>
+        </div>
+        <!--------------------------FIN CIRCULOS----------------------------->
+        <!--------------------------TITULO NOSOTROS----------------------------->
+        <div class="mt-5 text-center position-relative">
+            <p class="pa-sobre">
+                Sobre <span class="pa-nosotros">nosotros</span>
+            </p>
+            <div class="linea-nosotros position-absolute bottom-0 start-50 translate-end-x"></div>
+        </div>
+        <!--------------------------FIN TITULO NOSOTROS----------------------------->
+        <!--------------------------TEXTO SOBRE NOSOTROS----------------------------->
+        <div class="container mt-4 px-5">
+            <p>En <strong>SUEÑOS A MEDIDA</strong>, no solo queremos embellecer tus espacios sino entender que tu hogar
+                es un reflejo de tu personalidad y estilo de vida. Somos más que una tienda de cabeceros; somos
+                creadores de atmósferas que reflejan el gusto único de cada cliente.</p>
+
+            <p>Creemos que cada cabecero cuenta una historia, y esa historia merece ser contada con elegancia. Por eso,
+                seleccionamos cuidadosamente materiales de primera calidad, desde la madera hasta las pinturas, y
+                colaboramos con artistas y artesanos expertos para garantizar que cada pieza sea una obra maestra
+                duradera. </p>
+
+            <p>
+            <div class="mt-3 pb-5 text-center">
+                <button class="btn btn-primary boton-texto pb-2 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#textoCollapse" aria-expanded="false" aria-controls="textoCollapse"
+                    id="toggleButton">
+                    Más
+                </button>
+                <div class="collapse pt-3" id="textoCollapse">
+                    <div class="card card-body texto-mas px-0">
+                        <p>
+                            Estos materiales son también ecológicos y amigables con el medio ambiente, ya que otro de
+                            nuestros principales objetivos es contribuir a disminuir la huella que la contaminación y
+                            desperdicio de recursos está dejando en el mundo. Incluso contamos con la certificación
+                            medioambiental de Gestión Ambiental Global por parte de AENOR.
+                        </p>
+                        <p>
+                            Para más información acerca de esto, accede a este link:
+                            <a style="color: black;"
+                                href="https://www.aenor.com/certificacion/medio-ambiente">https://www.aenor.com/certificacion/medio-ambiente</a>
+                        </p>
+                        <p><strong>¿Qué hace que nuestros cabeceros sean verdaderamente especiales? </strong></p>
+                        <p>La posibilidad de personalización completa. Colores, tamaños y detalles decorativos: cada
+                            elemento está en tus manos. Nuestro equipo se compromete a llevar a cabo tus ideas y
+                            convertirlas en piezas maestras que complementen a la perfección tu dormitorio. </p>
+                        <div class="d-flex">
+                            <div>
+                                <p><strong>¿Donde nos ubicamos?</strong></p>
+                                <p>En calle Los Molinos, Nº10. CP: 28002 Madrid</p>
+                                <p><strong>¿Cómo nos puedes contactar?</strong></p>
+                                <p>Por WhatsApp <strong>→</strong> 677 751 123</p>
+                                <p>
+                                    Explora nuestro catálogo y descubre cómo podemos elevar tu dormitorio al siguiente
+                                    nivel, tu
+                                    sueño de un dormitorio único comienza aquí!</p>
+                            </div>
+                            <div>
+                                <img class="imagen-aenor" style="width: 151px; height: 80px;"
+                                    src="../assets/images/aenor.jpg" alt="etiqueta aenor">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------FIN TEXTO SOBRE NOSOTROS----------------------------->
+        <!--------------------------COMENTARIOS----------------------------->
+        <div class="container px-5 gap-5">
+            <div class=" row  ">
+                <div class="card-body col-12 col-md-6 pb-5 ">
+                    <!------Comentario 1--------->
+                    <div class="caja d-flex  align-items-center justify-content-start mb-2 gap-3">
+                        <img style="width: 30px; height: 30px;" src="../assets/images/no-user.png" alt="foto-nousuario">
+                        <p class="mb-0">Maria José</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start gap-5">
+                        <div>
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                        </div>
+                        <p class="mb-0 pa-negrita">Bueno, bonito y barato</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start">
+                        <p class="pa-gris">28 de Agosto de 2023</p>
+                    </div>
+                    <div class="caja">
+                        <p>Fue muy fácil de montar y además se puede cambiar de color las luces led</p>
+                    </div>
+                </div>
+                <!------Comentario 2--------->
+                <div class="card-body col-12 col-md-6 pb-5 ">
+                    <div class="caja d-flex  align-items-center justify-content-start mb-2 gap-3">
+                        <img style="width: 30px; height: 30px;" src="../assets/images/user-hombre.png" alt="foto-nousuario">
+                        <p class="mb-0">Angel Luis</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start gap-5">
+                        <div>
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                        </div>
+                        <p class="mb-0 pa-negrita">Excelente calidad-precio</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start">
+                        <p class="pa-gris">1 de Septiembre de 2023</p>
+                    </div>
+                    <div class="caja">
+                        <p>Se nota que la calidad de la pintura y de la madera son buenas</p>
+                    </div>
+                </div>
+                <!------Comentario 3--------->
+                <div class="card-body col-12 col-md-6 pb-5 ">
+                    <div class="caja d-flex  align-items-center justify-content-start mb-2 gap-3">
+                        <img style="width: 30px; height: 30px;" src="../assets/images/user-mujer.png" alt="foto-nousuario">
+                        <p class="mb-0">Marisa</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start gap-5">
+                        <div>
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                        </div>
+                        <p class="mb-0 pa-negrita">Perfecto</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start">
+                        <p class="pa-gris">28 de Agosto de 2023</p>
+                    </div>
+                    <div class="caja">
+                        <p>Ahora mi habitación parece otra pero si dejo la luz encendida gasto luz</p>
+                    </div>
+                </div>
+                <!------Comentario 4--------->
+                <div class="card-body col-12 col-md-6 pb-5 ">
+                    <div class="caja d-flex  align-items-center justify-content-start mb-2 gap-3">
+                        <img style="width: 30px; height: 30px;" src="../assets/images/user-mujerMayor.png" alt="foto-nousuario">
+                        <p class="mb-0">Irene Ramos</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start gap-5">
+                        <div>
+                            <img style="width: 30px; height: 40px;" src="../assets/images/cama_lateral.png"
+                                alt="puntuacion">
+                        </div>
+                        <p class="mb-0 pa-negrita">Muy tardío</p>
+                    </div>
+                    <div class="caja d-flex  align-items-center justify-content-start">
+                        <p class="pa-gris">15 de Agosto de 2023</p>
+                    </div>
+                    <div class="caja">
+                        <p>Llegaron una hora más tarde del plazo indicado, que sinvergüenzas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const toggleButton = document.getElementById('toggleButton');
+
+            toggleButton.addEventListener('click', () => {
+                const buttonText = toggleButton.innerHTML;
+                toggleButton.innerHTML = buttonText === 'Más' ? 'Menos' : 'Más';
+            });
+        </script>
+
+
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <!--------------------------------------------FIN MAIN------------------------------------------------->
-    <!--------------------------------------------FOOTER------------------------------------------------->
-    <footer>
-
-    </footer>
-    <!--------------------------------------------FIN FOOTER------------------------------------------------->
 </body>
+
 </html>

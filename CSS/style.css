@@ -35,19 +35,96 @@ body {
 
 /******************************HEADER********************************/
 
-#nav{
+#nav {
     background-color: #EDE0D4;
     z-index: 3;
-  }
+}
 
-  .btn{
+.btn {
     background-color: #CEA0A0;
     border-color: #CEA0A0;
-  }
+}
 
 
 /******************************FIN HEADER********************************/
 /****************************INICIO MAIN******************************/
+/****************************HOME******************************************/
+.btn-personalizar {
+    background-color: var(--colorSecundario);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+
+.pa-catalogo {
+    font-family: "fuente-bold";
+    font-size: 60px;
+    line-height: 120.418%;
+    letter-spacing: 9px;
+    text-decoration: none;
+    z-index: 1;
+    color: black;
+}
+
+.linea-catalogo {
+    background-color: var(--colorTerciario);
+    height: 7px;
+    width: 20%;
+    transform: translateX(-27%);
+}
+
+.circulo {
+    width: 250px; 
+    height: 250px;
+    background-color: var(--colorSecundario);
+}
+
+h4 {
+    font-family: "fuente-bold";
+}
+
+.pa-sobre {
+    font-family: "fuente-bold";
+    font-size: 60px;
+}
+
+.pa-nosotros{
+    font-family: "fuente-normal";
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.linea-nosotros {
+    background-color: var(--colorPrincipal);
+    height: 7px;
+    width: 13%;
+}
+
+.boton-texto{
+    border: none;
+}
+
+.texto-mas{
+    text-align: left;
+    border: none;
+}
+
+.imagen-aenor{
+    margin-right: 150px;
+}
+.caja {
+
+    display: flex;
+}
+
+.pa-negrita {
+    font-family: "fuente-bold";
+}
+
+.pa-gris{
+    color: gray;
+}
+
+/**********************FORMULARIO**************************/
 .titulo {
 
     font-family: "fuente-bold";
@@ -58,7 +135,7 @@ body {
     background-color: var(--colorSecundario);
 }
 
-.linea{
+.linea {
     background-color: var(--colorSecundario);
     height: 7px;
 }
@@ -68,11 +145,11 @@ body {
     font-family: "fuente-semibold";
 }
 
-.pa-derecha{
+.pa-derecha {
     text-align: right;
 }
 
-.borde-resumen{
+.borde-resumen {
     width: 95%;
 }
 
@@ -86,7 +163,7 @@ body {
     margin-left: 35px;
 }
 
-.texto-small{
+.texto-small {
     font-size: 10px;
     margin-left: 35px;
 
@@ -105,7 +182,8 @@ body {
 }
 
 .btn:hover {
-    background-color: var(--colorSecundario);   
+    background-color: var(--colorSecundario);
 }
 
- 
+/****************************FIN FORMULARIO******************************/
+/**********************FIN MAIN**************************/
