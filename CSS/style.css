@@ -41,18 +41,36 @@ body {
 }
 
 .btn {
-    background-color: #CEA0A0;
-    border-color: #CEA0A0;
+    background-color: var(--colorTerciario);
+    border-color: var(--colorTerciario);
+}
+
+.logo_div{
+    text-align: left;
+}
+
+.button_div{
+    text-align: right;
+}
+
+.navbar>.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 
 /******************************FIN HEADER********************************/
 /****************************INICIO MAIN******************************/
 /****************************HOME******************************************/
-.btn-personalizar {
-    background-color: var(--colorSecundario);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    width: 500px;
+.boton-personalizacion {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+    width: 250px !important;
+    border: none !important;
+}
+
+.div-catalogo{
+    width: 326px;
+    display: inline-block;
 }
 
 .pa-catalogo {
@@ -67,9 +85,9 @@ body {
 
 .linea-catalogo {
     background-color: var(--colorTerciario);
-    height: 7px;
-    width: 20%;
-    transform: translateX(-27%);
+    height: 10px;
+    width: 163px;
+    transform-origin: right;
 }
 
 .circulo {
@@ -96,7 +114,7 @@ h4 {
 .linea-nosotros {
     background-color: var(--colorPrincipal);
     height: 7px;
-    width: 13%;
+    width: 180px;
 }
 
 .boton-texto{
