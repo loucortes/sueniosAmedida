@@ -11,4 +11,3 @@ check.addEventListener("change", ()=>{
         btn.disabled = true;
     }
 });
-
