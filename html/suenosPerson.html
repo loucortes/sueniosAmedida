@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+    <nav class="navbar" id="nav">
+        <div class="container-fluid mx-5 px-0">
+          <a class="navbar-brand" href="../html/home.html"><img src="../assets/images/logoSueños.png" alt=""
+            width="120" height="90"></a>
+           
+            <button class="navbar-toggler border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <img src="../assets/images2/Double Bed.png" a>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Articulos en tu carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body d-flex justify-content-between flex-column">
+                    <ul class="shopping-cart">
+                    </ul>
+                    <div class="container-fluid mx-0 px-0">
+                      <h5>Total: <span id="total">0</span>€</h5>
+                      <a href="./formulario.html" class="btn btn-dark btn-lg col d-block">Pagar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex row my-0">
+        <div id="preview" class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+            <div class="container d-flex mt-5 align-items-center flex-column ">
+              <div id="img-preview">
+                <img src="../assets/images2/only_wall.png" alt="" id="wall">
+                <img src="../assets/images2/only_bed.png" alt="image of a bed" id="img-bed">
+                <img src="../assets/images2/only_headboard.png" alt="image of a bed" id="img-headboard" class="invisible">
+                <img src="../assets/images2/only_bed.png" alt="image of a bed" id="img-hidden">
+              </div>
+                <div id="img-description" class="mt-5 container px-4">
+                    <div class="container pt-1">
+                        <h5 class="mt-3">Descripción:</h5>
+                        <div class="mt-4">
+                          <p><strong>Diseño:</strong> <span id="d-design"></span></p>
+                          <p><strong>Medida:</strong> <span id="d-size"></span></p>
+                            <p><strong>Forma:</strong> <span id="d-shape"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container p-5 col pb-0">
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Paso 1: &nbsp; Diseño
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                  <div class="container">
+                    <div class="accordion-body d-flex justify-content-between flex-wrap row-gap-3">
+                      <div class="d-flex gap-3 flex-wrap" id="img-designs">
+                        <img src="../assets/images2/group_6.png" alt="image of grafiti" class="design" data-value="Graffiti">
+                        <img src="../assets/images2/artsy.png" alt="image of grafiti" class="design" data-value="Artsy">
+                        <img src="../assets/images2/family.png" alt="image of grafiti" class="design" data-value="Family">
+                        <img src="../assets/images2/new_york.png" alt="image of grafiti" class="design" data-value="New York">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Paso 2: &nbsp; Tamaño
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <div class="container">
+                  <div class="my-3 d-flex justify-content-between flex-wrap row-gap-3">
+                    <div class="btn-group" role="group" aria-label="radio toggle group">
+                      <input type="radio" class="btn-check" name="size" id="s1" value="S">
+                      <label for="s1" class="btn btn-dark btn-lg">S</label>
+                      <input type="radio" class="btn-check" name="size" id="s2" value="M">
+                      <label for="s2" class="btn btn-dark btn-lg">M</label>
+                      <input type="radio" class="btn-check" name="size" id="s3" value="L">
+                      <label for="s3" class="btn btn-dark btn-lg">L</label>
+                    </div>
+                    <div class="col-4">
+                      <div class="input-group">
+                        <button class="btn btn-dark btn-lg" type="button" id="custom">Custom</button>
+                        <input type="text" class="form-control" placeholder="25X54X25" id="input_custom" disabled>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Paso 3: &nbsp; Forma
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="container">
+                <div class="accordion-body d-flex gap-3" id="shapes">
+                  <div id="circle" data-value="Circular"></div>
+                  <div id="square" data-value="Cuadrado"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <button class="btn btn-dark btn-lg mt-3 mb-2" id="ready">Listo</button>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
