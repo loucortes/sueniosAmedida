@@ -142,6 +142,11 @@ h4 {
     color: gray;
 }
 
+.link-personalizacion {
+    text-decoration: none;
+    color: black;
+}
+
 /**********************FORMULARIO**************************/
 .titulo {
 
@@ -230,3 +235,19 @@ h4 {
 
 /******************FIN PAGO*****************************/
 /**********************FIN MAIN**************************/
+
+@media (max-width: 700px) {
+    .boton-personalizacion{
+        width: 200px !important;
+        height: 30px;
+        font-size: 15px !important;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .boton-personalizacion{
+        width: 150px !important;
+        height: 30px;
+        font-size: 12px !important;
+    }
+  }
