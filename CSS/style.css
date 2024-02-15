@@ -68,6 +68,11 @@ body {
     border: none !important;
 }
 
+.boton-pers{
+    text-decoration: none;
+    color: black;
+}
+
 .div-catalogo{
     width: 326px;
     display: inline-block;
